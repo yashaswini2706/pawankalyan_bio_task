@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #43e97b, #38f9d7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/10/free-website-background-15.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .login-box {
+      background:rgba(255,255,255,0.5);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .login-box h2 {
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4a90e2;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .login-box button:hover {
+      background-color: #357ab8;
+    }
+  </style>
 </head>
 <body>
-    <form action="">
-        <h1>LOGIN</h1>
-    <P>
-        <input type="email"
-         placeholder=" enter username"
-        name="email" id="email"required/>
-    </P>
-    <P>
-        <input type="password"
-         placeholder="password"
-        name="password" id="password"required/>
-    </P>
-    <button>login</button>
-    <a href="https://www.login.gov/help/trouble-signing-in/forgot-your-password/"> forgot password </a>
-    <p>
-    <a href="./blog.html">Blog page</a>
-</p>
-    
-
+  <div class="login-box">
+    <h2>Login</h2>
+    <form action="blog.html" method="get">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
     </form>
-    
+  </div>
 </body>
 </html>
